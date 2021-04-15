@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--- Basic Page Needs  -->
+    <title>Training Configuration || ATMS</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+
+    <!--    Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <h3 class="navbar-brand header-name">
+        Automated Training Management system
+      </h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <img class="Emp-Reg-Image" src="Images/EmployeeReg.png" alt="Reg-Image" />
+    <div class="wrapper">
+        <div class="title">
+          Training Configuration
+        </div>
+        <div class="form">
+            <div class="inputfield">
+              <label>Trainer Name</label>
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="Trainer">Raju H</option>
+                  <option value="Trainer">David W</option>
+                  <option value="Trainer">Kiran LM</option>
+                </select>
+              </div>
+           </div> 
+           <div class="inputfield">
+              <label>VENDOR</label>
+              <form name=f1 method=post>
+                <input type="checkbox" name=others onclick="enable_text(this.checked)" >Others
+                <input type=text name=other_text>
+                </form>
+           </div> 
+            <div class="inputfield">
+                <label>Trainee List</label>
+                         <div class="form-group">
+                        <select class="selectpicker" multiple data-live-search="true">
+                          <option>Trainee 1</option>
+                          <option>Trainee 2</option>
+                          <option>Trainee 3</option>
+                          <option>Trainee 4</option>
+                          <option>Trainee 5</option>
+                          <option>Trainee 6</option>
+                        </select>
+                        </div> 
+           </div> 
+           <div class="inputfield">
+              <label>Training Location</label>
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="Trainer">Meeting Room 1</option>
+                  <option value="Trainer">Meeting Room 2</option>
+                  <option value="Trainer">Meeting Room 3</option>
+                </select>
+              </div>
+           </div> 
+            <div class="inputfield">
+                <label for="Training Date">Training Date and Time</label>
+                <input type="date" class="input" name="dateofbirth" id="dateofbirth">
+            </div>
+          <div class="inputfield">
+            <input type="submit" value="SUBMIT" class="btn">
+          </div>
+        </div>
+    </div>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    </body>
+</html>

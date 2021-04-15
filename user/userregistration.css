@@ -1,0 +1,258 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+.navbar-admin {
+    background-color: #0f427b;
+}
+.navbar-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h2-atms {
+    color: white;
+    font-size: 18px;
+    font-family: 'Red Rose', cursive; 
+    font-weight: 700;
+    margin: 0;
+}
+.btn-drpbtn{
+    font-size: 14px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 500 !important;
+    margin: 0;
+    color: white !important;
+    margin-right: 20px;
+}
+.drp-menu {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.div-atms-dashboard {
+    position: relative;
+    padding-top: 50px;
+}
+.div-atms-dashboard .card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: #0f427b;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.div-atms-dashboard .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #45a050;
+    clip-path: circle(150px at 80% 20%);
+    transition: 1.5s ease-in-out;
+}
+.div-atms-dashboard .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+.div-atms-dashboard .card:hover .contentBx {
+    height: 210px;
+}
+
+.div-atms-dashboard .card:hover:before {
+    clip-path: circle(300px at 80% -40%);
+}
+
+.div-atms-dashboard .card:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -2%;
+    font-size: 5em;
+    font-weight: 500;
+    color: white;
+}
+.div-atms-dashboard .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 262px;
+    transition: 1.5s;
+}
+
+.div-timer {
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 10px;
+}
+.p-time {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+.h4-time {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+.div-atms-dashboard .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 150px;
+    height: 150px;
+}
+.Emp-Reg2 {
+    width: 241px !important;
+    height: 217px !important;
+}
+
+.Client-Reg1 {
+    width: 112px !important;
+    height: 229px !important;
+}
+.Training-Config {
+    width: 178px !important;
+    height: 204px !important;
+}
+.div-atms-dashboard .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1.5s;
+    z-index: 10;
+}
+h5 {
+    color: white;
+    font-family: 'Red Rose', cursive; 
+}
+a {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.div-flex {
+    display: flex;
+    align-items: center;
+}
+.img-signout {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.p-logout {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.div-atms-settings {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+  /* Floating Social Media Bar Style Starts Here */
+  
+  .img-floating {
+    height: 50px;
+    width: 45px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+  .fl-fl {
+    background: rgb(15 66 123 / 80%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 80%;
+    position: fixed;
+    right: -70%;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all 1s ease;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 60px;
+  }
+  
+
+  
+  .fl-fl:hover {
+    right: -790px;
+  }
+  
+  .fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px!important;
+    vertical-align: top!important;
+  }
+  
+  .float-fb {
+    bottom: 50px;
+  }  
+
+  .div-float-flex {
+      display: flex;
+      align-items: center;
+  }
+  .div-session {
+   padding-right: 5px;
+  }
+  .p-session {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    font-weight: 600;
+  }
+ .ses-time {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px 10px;
+}
+
+
+ .h4-float-training {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+ }
+ .btn-stop{
+     font-size: 13px !important;
+     letter-spacing: 0.4px;
+     font-weight: 600 !important;
+    padding: 3px 20px !important;
+    margin-left: 30px !important;
+ }

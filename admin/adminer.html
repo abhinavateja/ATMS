@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ATMS</title>
+<link rel="stylesheet" href="adminer.css">  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+<body>
+    <div class="div-background">
+        <nav class="navbar navbar-light navbar-admin "> 
+            <div></div>           
+            <div class="div-atms-settings">
+                <div class="div-timer">
+                    <p class="p-time">Session Time</p>
+                    <h4 class="h4-time">04:&nbsp;30:&nbsp;15</h4>
+                </div>
+                <img class="img-user" src="assets/images/user.png"/>
+                <div class="btn-group">                
+                    <button class="btn  btn-sm dropdown-toggle btn-drpbtn" style="padding-left: 0;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Chedalla Nikhil
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item drp-menu" >Profile</a>
+                        <a class="dropdown-item drp-menu" >Change Password</a>                   
+                    </div>
+                </div>   
+                <div class="div-flex">
+                    <img class="img-signout" src="assets/images/signout.png"/>
+                    <!-- <p class="p-logout">Log out</p> -->
+                </div>      
+    
+            </div>
+           
+            
+        </nav>
+        <div class="div-sidebar">
+           <a class="atms-icon-settings" href="./adminregistration.html">
+               <img class="back-icon" src="./assets/images/menu.png"/>              
+           </a>
+           <div class="atms-icon-settings">
+            <img class="back-icon1"  src="./assets/images/EmpReg2.png"/>
+             <!-- <h4 class="h4-name">Emp Registration</h4> -->
+           </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" style="width: 45px;height: 90px;" src="./assets/images/EmployeeBG4.png"/>
+                <!-- <h4 class="h4-name" href="./admincr.html">Client Registration</h4> -->
+            </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" src="./assets/images/Trainingconfig1.png"/>
+                <!-- <h4 class="h4-name" href="./admints.html">Training Schedule</h4> -->
+            </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" src="./assets/images/Adminsettings1.png"/>
+                <!-- <h4 class="h4-name">Admin Settings</h4> -->
+            </div>
+
+        </div>
+        <div class="div-card">
+            <a class="div-back" href="../home.html">
+                <img class="back-img" src="./assets/images/back-btn.png"/>
+            </a>
+            <h4 class="h4-client">Employee Registration</h4>        
+            <!-- <div class="div-search">
+                <input type="text" class="form-control div-input-search">
+                <img class="img-search" src="./assets/images/search.png"/>
+            </div> -->
+           
+        </div>
+        <div class="row" style="margin-right: 0;">
+            <div class="col-md-6 ml-auto mr-auto">
+                <div class="div-atms-card">
+                    <h4 class="h4-title"> New Employee Registration</h4>
+                    <form>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="firstname">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="firstname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="firstname">Employee ID</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="employeeid" >
+                            </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="departments">Departments</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control div-input" id="departments">
+                                    <option>Select</option>
+                                    <option>Quality Assurance (QA)</option>
+                                    <option>Quality Control (QC)</option>
+                                    <option>Production (PRD)</option>
+                                    <option>Engineering (ENG)</option>
+                                    <option>Human Resources (HR)</option>  
+                                    <option>Information Technology (IT)</option>                                                                         
+                                </select>
+                                <!-- <textarea class="form-control" id="departments" rows="3"></textarea> -->
+                            </div>
+                           <div class="col-md-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                       Management
+                                    </label>
+                                </div>                               
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="userid">User ID</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="userid">
+                            </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="desgination">Desgination</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="desgination">
+                            </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>                                   
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-check" style="text-align: left;margin-left: 6px;padding-right: 20px;">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                     Male
+                                    </label>
+                                  </div>
+                                 
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="form-check"   style="text-align: center;">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                      Female
+                                    </label>
+                            </div>
+                           
+                        </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="dateofbirth">Date of Birth</label>                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" id="dateofbirth" >
+                            </div>
+                        </div>
+                        <div class="row div-row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="emailaddress">E-Mail</label>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="emailaddress" >
+                            </div>
+                        </div>     
+                       
+                       
+                          <div class="div-btn-settings">
+                            <button type="button" class="btn  btn-submit" data-toggle="modal" data-target="#submitmodal">Submit</button>
+                            <a type="button" class="btn  btn-modify" href="./erlistform.html" style="padding-bottom: 0;">Modify&nbsp;Existing</a>
+                          </div>
+                          
+                       
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </div>    
+
+    <div class="modal fade" id="active" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: rgb(7 66 123 / 73%);padding: 10px 20px;">
+              <h5 class="modal-title">ATMS0001</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="btn-close" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">   
+             <h4 class="h4-description">Departments&nbsp;:</h4>
+             <div class="div-collpase">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">  
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed btn-card-header" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Quality Accurance (QA)&nbsp;-&nbsp;&nbsp;<span style="font-weight: 900;font-size: 14px;">25</span> Trainees 
+                          </button>
+                        </h2>
+                        
+                        <div class="form-check" style="margin-bottom: 20px;">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                          </div>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Sathish Jordan</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Md.Sherif</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>                        
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed btn-card-header" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Quality Control (QC)&nbsp;-&nbsp;&nbsp;<span style="font-weight: 900;font-size: 14px;">50</span> Trainees 
+                          </button>
+                        </h2>
+                        <div class="form-check" style="margin-bottom: 20px;">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                          </div>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Sathish Jordan</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Md.Sherif</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed btn-card-header" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Engineering&nbsp;-&nbsp;&nbsp;<span style="font-weight: 900;font-size: 14px;">All</span> Trainees 
+                          </button>
+                        </h2>
+                        <div class="form-check" style="margin-bottom: 20px;">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                          </div>
+                        
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Sathish Jordan</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Md.Sherif</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>
+                            <div class="div-prsnlist">
+                                <h4 class="h4-traineelist">Ajay Bhupathi</h4>
+                                <div class="form-check" style="margin-bottom: 20px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">                           
+                                </div>
+                            </div>           
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+             <div class="div-buttons">
+                 <button class="btn btn-success btn-srt"    >Start</button>
+                 <button class="btn btn-danger btn-stop">Stop</button>
+             </div>
+            </div>
+           
+          </div>
+        </div>
+        
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: rgb(7 66 123 / 73%);padding: 10px 20px;">
+                <h4 class="h4-description1" >E-Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row div-row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="userid">User ID</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="userid" >   
+                        </div>
+                    </div>
+                    <div class="row div-row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="password"> 
+                        </div>
+                    </div>                                   
+                    <div class="div-buttons">
+                        <button class="btn btn-success btn-srt" >Confirm</button>
+                        <button class="btn btn-danger btn-stop">Cancel</button>
+                    </div>
+                  </form>
+            </div>            
+          </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="submitmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content mdl-success">
+                     
+            <div class="div-success-alert">  
+                <div class="div-success">                    
+                    <div class="div-poistioning">
+                        <img class="img-success" src="../ATMS/assets/images/success3.png"/>
+                    </div>
+                </div>
+                <div class="div-success-text">
+                    <h4 class="h4-awesome">Success!</h4>
+                    <p class="p-text">The Employee Registration has been Success</p>
+
+                    <div class="div-close">                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span  aria-hidden="true">Dismiss</span>
+                        </button>
+                    </div>
+                </div>   
+            </div>    
+                  
+                     
+          </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

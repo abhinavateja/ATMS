@@ -1,0 +1,269 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-admin {
+    background-color: #0f427b;
+}
+.navbar-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h2-atms {
+    color: white;
+    font-size: 18px;
+     font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+.btn-drpbtn{
+    font-size: 14px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 500 !important;
+    margin: 0;
+    color: white !important;
+    margin-right: 20px;
+}
+.drp-menu {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.div-flex {
+    display: flex;
+    align-items: center;
+}
+.img-signout {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    transition: 0.5s;
+
+}
+.img-user{
+    height: 35px;
+    width: 35px;
+    margin-right: 0px;
+    transition: 0.5s;
+}
+.img-user:hover {
+    transform: scale(1.5);
+}
+.img-signout:hover {
+    transform: scale(1.5);
+}
+.p-logout {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.div-atms-settings {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div-background {
+    background-color: #f6f9fa;  
+    position: relative;
+    height: 100vh;
+}
+
+.div-card {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.div-timer {
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 10px;
+}
+.p-time {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+.h4-time {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+.back-img {
+    height: 30px;
+    width: 30px;
+    background-color: #0f427b;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.h4-client {
+    font-size: 20px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(0 0 0 / 60%);
+    margin: 0;
+}
+.div-atms-card {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 500px;
+}
+.h4-title {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: 'Red Rose', cursive; 
+    color: #0f427b;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.atms-checkbox {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.div-btn-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-submit {
+    width: 150px !important;
+    background-color: #5995fd !important;
+    border: none;
+    outline: none;   
+    border-radius: 49px !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0 !important;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 42px !important;
+    border-radius: 49px !important;
+    font-size: 15px !important;
+}
+.btn-modify {
+    width: 160px !important;
+    background-color: orangered !important;
+    border: none;
+    outline: none;    
+    border-radius: 49px !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0 !important;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 38px !important;
+    font-size: 14px !important;
+}
+.div-sidebar {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background-color: #0f427b;
+    color: white;
+    padding: 20px 10px;
+    /* border-radius: 4px; */
+    height: 95vh;
+    width: 80px;
+
+    box-shadow: 7px 5px 7px #88888896;
+}
+.atms-icon-settings {
+    margin-bottom: 24px;
+    text-align: center;
+    /* border-bottom: 1px solid #fff; */
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.atms-icon-settings:first-child {
+    margin-bottom: 34px;
+    border-bottom: none;
+    margin-left: 16px;
+    
+}
+.atms-icon-settings:last-child {
+    border-bottom: none;
+}
+.back-icon {
+    height: 30px;
+    width: 30px;
+   
+    margin-bottom: 24px;
+}
+.back-icon1 {
+    height: 65px;
+    width: 65px;   
+    padding: 5px;
+    padding-left: 0;
+    transition: 0.5s;
+
+}
+
+.back-icon1:hover {
+    transform: scale(1.3);
+}
+.h4-name {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.img-logo {
+    height: 60px;
+    width: 60px;
+}
+
+label {
+    font-size: 13px;
+}
+.form-control::placeholder {
+    font-size: 14px;
+    color: black;
+}
+
+
+/*-----------------search----------------------*/
+
+.div-search {
+    position: relative;
+}
+
+.div-input-search {
+   
+    width: 500px !important;
+    margin-left: 80px;
+}
+.img-search {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ATMS</title>
+<link rel="stylesheet" href="listpageform.css">  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="div-background">
+        <nav class="navbar navbar-light navbar-admin ">
+            <!-- <h2 class="h2-atms">Automated Training Management system (ATMS)</h2>       -->
+               <div>
+                   <!-- <img class="img-logo" src="../ATMS/assets/images/company-logo.jpeg"/> -->
+                <!-- <h4 class="h2-atms"> Client Registration</h4> -->
+               </div>
+            <div class="div-atms-settings">
+                <div class="div-timer">
+                    <p class="p-time">Session Time</p>
+                    <h4 class="h4-time">04:&nbsp;30:&nbsp;15</h4>
+                </div>
+                <img class="img-user" src="assets/images/user.png"/>
+                <div class="btn-group">                
+                    <button class="btn  btn-sm dropdown-toggle btn-drpbtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Chedalla Nikhil
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item drp-menu" >Profile</a>
+                        <a class="dropdown-item drp-menu" >Change Password</a>                   
+                    </div>
+                </div>   
+                <div class="div-flex">
+                    <img class="img-signout" src="assets/images/signout.png"/>
+                    <!-- <p class="p-logout">Log out</p> -->
+                </div>      
+    
+            </div>
+           
+            
+        </nav>
+        <div class="div-sidebar">
+           <a class="atms-icon-settings" href="./adminregistration.html">
+               <img class="back-icon" src="./assets/images/menu.png"/>              
+           </a>
+           <div class="atms-icon-settings">
+            <img class="back-icon1"  src="./assets/images/EmpReg2.png"/>
+             <!-- <h4 class="h4-name">Emp Registration</h4> -->
+           </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" style="width: 45px;height: 90px;" src="./assets/images/EmployeeBG4.png"/>
+                <!-- <h4 class="h4-name" href="./admincr.html">Client Registration</h4> -->
+            </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" src="./assets/images/Trainingconfig1.png"/>
+                <!-- <h4 class="h4-name" href="./admints.html">Training Schedule</h4> -->
+            </div>
+            <div class="atms-icon-settings">
+                <img class="back-icon1" src="./assets/images/Adminsettings1.png"/>
+                <!-- <h4 class="h4-name">Admin Settings</h4> -->
+            </div>
+
+        </div>
+        <div class="div-card">
+            <div class="div-flex1">   
+            <a class="div-back" href="admincr.html">
+                <img class="back-img" src="./assets/images/back-btn.png"/>
+            </a>
+            <h4 class="h4-client">Client Registration</h4> 
+            </div>      
+            <div class="div-search">
+                <input type="text" class="form-control div-input-search">
+                <img class="img-search" src="./assets/images/search.png"/>
+            </div>       
+        </div>
+       
+
+        <div class="row" style="margin-right: 0;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 ml-auto mr-auto">
+                <div class="div-atms-card">
+                    <h4 class="h4-title"> Registrated Client List</h4>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <label for="trainingdatetime">From</label>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="trainingdatetime" >
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="trainingdatetime">To</label>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="trainingdatetime" >
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success btn-display">Display</button>
+                        </div>
+                    </div>
+                    <div class="div-table-settings">                
+                        <table class="table table-striped table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Client Code</th>
+                                    <th scope="col">Client Name</th>
+                                    <th scope="col">Registred on</th>
+                                    <th scope="col">Revision No</th>  
+                                    <th scope="col">Actions</th>                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td>Client001</td>
+                                    <td>N89 Solutions</td>
+                                    <td>04-08-2020 12:02 PM</td>
+                                    <td>00</td>
+                                    <td class="td-modify">
+                                        <a href="./clientsdetmodify.html">
+                                            Modify
+                                        </a>
+                                        
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">2</th>
+                                    <td>Client002</td>
+                                    <td>Bcard Solutions</td>
+                                    <td>04-08-2020 02:02 PM</td>
+                                    <td>00</td>
+                                    <td class="td-modify">Modify</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">3</th>
+                                    <td>Client003</td>
+                                    <td>NTrends</td>
+                                    <td>04-08-2020 05:30 PM</td>
+                                    <td>00</td>
+                                    <td class="td-modify">Modify</td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
